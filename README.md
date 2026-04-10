@@ -8,8 +8,8 @@ A modern, single-page e-commerce application built with Django and Stripe. This 
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
-cd your-repo-name
+git clone git@github.com:sannichauhan/ecom.git
+cd ecom
 ```
 ### 2. Environment Setup
 
