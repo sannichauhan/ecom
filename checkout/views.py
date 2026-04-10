@@ -43,7 +43,6 @@ def create_checkout_session(request, product_id):
 
         return redirect(checkout_session.url, code=303)
 
-# This view will be called by Stripe after payment is successful and will update the order status to 'paid'.
 def payment_success(request):
     session_id = request.GET.get('session_id')
     # Prevent double processing: Find order and mark as paid
@@ -55,3 +54,4 @@ def payment_success(request):
         order.save()
         
     return redirect('home')
+
